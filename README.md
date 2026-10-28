@@ -129,3 +129,13 @@ npx playwright show-report
 ├── .env.example # Template for required environment variables
 ├── playwright.config.ts # Global Playwright configuration
 └── README.md # Project documentation and test plan
+
+## 7. AI Assistance Disclosure
+
+In accordance with transparent engineering practices, generative AI tooling was utilized as an assistive accelerator during project development:
+
+- **Test Planning & Brainstorming**: Aiding in structuring and categorizing test scenarios, identifying potential boundary conditions, and refining edge-case coverage for Part 1.
+- **Scaffolding & Boilerplate Generation**: Expediting initial TypeScript boilerplate, Page Object Model (POM) skeleton definitions, and draft Playwright configuration syntax.
+- **Documentation & Formatting**: Structuring and proofreading the test documentation and execution guidelines for clarity and technical conciseness.
+
+All locator strategies, test architecture decisions, debugging workflows, and execution validations were implemented, verified, and adapted manually to ensure framework stability.
