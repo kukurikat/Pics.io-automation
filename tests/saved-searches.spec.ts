@@ -10,7 +10,7 @@ test.describe("Pics.io - Saved Searches Automation Suite", () => {
     savedSearchesPage = new SavedSearchesPage(page);
     filterBar = new FilterBar(page);
 
-    await page.goto("/", { timeout: 60000 });
+    await page.goto("/", { timeout: 120000 });
     await page.waitForLoadState("domcontentloaded");
 
     await savedSearchesPage.navigateToSavedSearches();
@@ -43,6 +43,7 @@ test.describe("Pics.io - Saved Searches Automation Suite", () => {
   test("3. Should apply an existing saved search and verify its state", async ({
     page,
   }) => {
+    await savedSearchesPage.expandFolder();
     await savedSearchesPage.selectSavedSearch("Corrupted files");
 
     await expect(page.locator("text== 0KB")).toBeVisible({ timeout: 5000 });

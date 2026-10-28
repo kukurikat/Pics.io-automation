@@ -40,7 +40,6 @@ export class SavedSearchesPage extends BasePage {
 
   async navigateToSavedSearches() {
     if (!(await this.searchInput.isVisible())) {
-      // Клік на іконку бінокля в крайній лівій панелі навігації
       const glassIcon = this.page.locator("#button-search");
       await glassIcon.click().catch(async () => {
         await this.page.goto("/#saved-searches").catch(() => {});

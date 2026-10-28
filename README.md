@@ -14,6 +14,8 @@ Authentication Strategy: Centralized setup project leveraging Playwright's stora
 
 2. Test Plan Summary
 
+Test Plan link: [https://docs.google.com/document/d/1vrTLlhOr00bGN1mp8z3Awm0k--zqFkskMFWcNe3N-ZI/edit?usp=sharing]
+
 The quality assurance strategy for the Saved Searches functionality encompasses both functional verification and critical edge cases:
 
 Entity Lifecycle (CRUD): Verification of creation, renaming, parameter updates, and deletion of saved search items across individual and team workspaces.

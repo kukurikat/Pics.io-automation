@@ -22,13 +22,11 @@ export default defineConfig({
   },
 
   projects: [
-    // 1. Проєкт сетапу — запускає ТІЛЬКИ auth.setup.ts
     {
       name: "setup",
       testMatch: /auth\.setup\.ts/,
     },
 
-    // 2. Основні тести — запускають усі .spec.ts файли КРІМ setup
     {
       name: "chromium",
       use: {
@@ -36,7 +34,7 @@ export default defineConfig({
         storageState: STORAGE_STATE,
       },
       dependencies: ["setup"],
-      testMatch: /.*\.spec\.ts/, // Явно вказуємо шукати всі spec-файли
+      testMatch: /.*\.spec\.ts/,
     },
   ],
 });
